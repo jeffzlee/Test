@@ -12,6 +12,6 @@ RUN cd /usr/bin \
     && ln -sf python3 python \
     && ln -sf pip3 pip
 # COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["python"]
 EXPOSE 80
-CMD ["python"]    
+# CMD ["python"]    
