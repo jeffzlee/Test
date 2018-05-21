@@ -14,4 +14,4 @@ RUN cd /usr/bin \
 # COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/bin/sh"]
 EXPOSE 80
-# CMD ["python"]    
+CMD ["python"]    
