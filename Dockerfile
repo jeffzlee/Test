@@ -13,6 +13,6 @@ RUN cd /usr/bin \
     && ln -sf pip3 pip
 COPY entrypoint.sh /entrypoint.sh
 RUN sudo chmod 777 /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 80
 # CMD ["--help"]    
