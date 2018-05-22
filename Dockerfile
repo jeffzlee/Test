@@ -18,4 +18,4 @@ RUN  chmod 777 /opt/entrypoint.sh
 ENTRYPOINT ["python" ]
 EXPOSE 80
 # CMD ["a" , "b" , "c" , "d" , "e" ]  
-CMD ["test.py"]
+CMD ["app.py"]
