@@ -11,10 +11,11 @@ RUN apk add --update --progress \
 RUN cd /usr/bin \
     && ln -sf python3 python \
     && ln -sf pip3 pip
+RUN pip install -r requirements.txt    
 COPY entrypoint.sh /opt/entrypoint.sh
 RUN  chmod 777 /opt/entrypoint.sh
 # ENTRYPOINT ["/opt/entrypoint.sh" ]
 ENTRYPOINT ["python" ]
 EXPOSE 80
 # CMD ["a" , "b" , "c" , "d" , "e" ]  
-CMD ["--version"]
+CMD ["test.py"]
