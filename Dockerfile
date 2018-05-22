@@ -15,4 +15,4 @@ COPY entrypoint.sh /opt/entrypoint.sh
 RUN gosu chmod 777 /opt/entrypoint.sh
 ENTRYPOINT ["/opt/entrypoint.sh" ]
 EXPOSE 80
-CMD ["kkkkk"]    
+CMD ["a" , "b" , "c" , "d" , "e"]  
