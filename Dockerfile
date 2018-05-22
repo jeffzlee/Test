@@ -11,8 +11,8 @@ RUN apk add --update --progress \
 RUN cd /usr/bin \
     && ln -sf python3 python \
     && ln -sf pip3 pip
-#gosu COPY entrypoint.sh /entrypoint.sh
-#RUN gosu chmod 777 /entrypoint.sh
+# gosu COPY entrypoint.sh /entrypoint.sh
+# RUN gosu chmod 777 /entrypoint.sh
 ENTRYPOINT ["/bin/sh"]
-#EXPOSE 80
+# EXPOSE 80
 # CMD ["--help"]    
