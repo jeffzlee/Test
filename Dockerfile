@@ -14,10 +14,11 @@ RUN cd /usr/bin \
 
 COPY entrypoint.sh /opt/entrypoint.sh
 COPY requirements.txt /opt/requirements.txt
+COPY app.py /opt/app.py
 RUN  chmod 777 /opt/entrypoint.sh
 RUN pip install -r requirements.txt    
 # ENTRYPOINT ["/opt/entrypoint.sh" ]
 ENTRYPOINT ["python" ]
 EXPOSE 80
 # CMD ["a" , "b" , "c" , "d" , "e" ]  
-CMD ["app.py"]
+CMD ["/opt/app.py"]
