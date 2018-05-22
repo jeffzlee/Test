@@ -13,6 +13,8 @@ RUN cd /usr/bin \
     && ln -sf pip3 pip
 COPY entrypoint.sh /opt/entrypoint.sh
 RUN  chmod 777 /opt/entrypoint.sh
-ENTRYPOINT ["/opt/entrypoint.sh" ]
+# ENTRYPOINT ["/opt/entrypoint.sh" ]
+ENTRYPOINT ["python" ]
 EXPOSE 80
-CMD ["a" , "b" , "c" , "d" , "e" ]  
+# CMD ["a" , "b" , "c" , "d" , "e" ]  
+CMD ["--version"]
