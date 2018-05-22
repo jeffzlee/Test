@@ -14,5 +14,5 @@ RUN cd /usr/bin \
 #gosu COPY entrypoint.sh /entrypoint.sh
 #RUN gosu chmod 777 /entrypoint.sh
 ENTRYPOINT ["/bin/sh"]
-EXPOSE 80
+#EXPOSE 80
 # CMD ["--help"]    
