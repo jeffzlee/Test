@@ -12,11 +12,11 @@ RUN cd /usr/bin \
     && ln -sf python3 python \
     && ln -sf pip3 pip
 
-COPY entrypoint.sh /opt/entrypoint.sh
+# COPY entrypoint.sh /opt/entrypoint.sh
 COPY requirements.txt /opt/requirements.txt
 COPY app.py /opt/app.py
 RUN  chmod 777 /opt/entrypoint.sh
-RUN pip install -r requirements.txt    
+RUN pip install -r /opt/requirements.txt  
 # ENTRYPOINT ["/opt/entrypoint.sh" ]
 ENTRYPOINT ["python" ]
 EXPOSE 80
