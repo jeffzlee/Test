@@ -15,4 +15,4 @@ COPY entrypoint.sh /opt/entrypoint.sh
 RUN  chmod 777 /opt/entrypoint.sh
 ENTRYPOINT ["/opt/entrypoint.sh" ]
 EXPOSE 80
-CMD ["a" , "b" , "c" , "d" , "e"]  
+CMD ["a" , "b" , "c" , "d" , "e" ,$p]  
