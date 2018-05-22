@@ -1,3 +1,3 @@
 #!/bin/sh
-echo 
+echo $1
 /bin/sh
