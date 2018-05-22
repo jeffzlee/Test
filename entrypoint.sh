@@ -1,3 +1,3 @@
 #!/bin/sh
-echo  $1 $2 $3 $4 $5 $p
+echo  $P $1 $2 $3 $4 $5 
 /bin/sh
