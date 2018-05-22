@@ -13,6 +13,6 @@ RUN cd /usr/bin \
     && ln -sf pip3 pip
 gosu COPY entrypoint.sh /opt/entrypoint.sh
 RUN gosu chmod 777 /opt/entrypoint.sh
-ENTRYPOINT ["/bin/echo" ]
+ENTRYPOINT ["/opt/entrypoint.sh" ]
 # EXPOSE 80
 CMD ["kkkkk"]    
