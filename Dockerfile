@@ -6,6 +6,7 @@ RUN apk add --update --progress \
         python3-dev \
         bash \
         git \
+        curl \
     && pip3 install --no-cache-dir --upgrade pip
 
 RUN cd /usr/bin \
