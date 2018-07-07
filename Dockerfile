@@ -1,5 +1,4 @@
-FROM busybox
-#FROM alpine:edge
+FROM alpine:edge
 RUN apk add --update --progress \
         musl \
         build-base \
@@ -8,7 +7,8 @@ RUN apk add --update --progress \
         bash \
         git \
         curl \
-        busybox-extras \
+        busybox \
+      #  busybox-extras \
     && pip3 install --no-cache-dir --upgrade pip
 
 RUN cd /usr/bin \
